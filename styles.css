@@ -2,7 +2,7 @@ body {
   background-image: -webkit-gradient(linear, left top, right top, from(#eedab5), to(#e3f9ee));
   background-image: linear-gradient(to right, #eedab5, #e3f9ee);
   font-family: 'Poppins', sans-serif;
-  margin-left: 100px;
+  margin-left: 115px;
   margin-right: 105px;
   margin-top: 30px;
 }
@@ -16,7 +16,7 @@ h1, h2 {
 }
 
 header {
-  height: 45px;
+  height: 54px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,17 +26,17 @@ header {
 }
 
 header .header-title {
-  padding-left: 16px;
-  padding-right: 16px;
+  height: 100%;
+  width: 180px;
 }
 
 header .header-title h1 {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 34px;
 }
 
 header .header-menu {
-  margin-left: 30px;
+  margin-left: 35px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,7 +61,7 @@ header .header-menu .menu-item h2 {
   height: 32px;
 }
 
-header .header-menu .menu-item i {
+header .header-menu .menu-item img {
   margin-left: 8px;
 }
 
@@ -85,8 +85,8 @@ header .header-buttons {
 
 header .header-buttons .header-btn {
   border: 2px solid #000000;
-  margin-left: 8px;
-  padding: 0 8px 0 8px;
+  margin-left: 6px;
+  padding: 0 6px 0 6px;
   height: 34px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,11 +114,11 @@ header .header-buttons .header-btn.header-split-btn div:not(:nth-of-type(1)) {
   border-left: 2px solid #000000;
 }
 
-header .header-buttons .header-btn.header-split-btn div span {
-  margin: 0 15px 0 15px;
+header .header-buttons .header-btn.header-split-btn div img {
+  margin: 0 14px 0 14px;
 }
 
-header .header-buttons .header-btn span, header .header-buttons .header-btn i {
+header .header-buttons .header-btn span, header .header-buttons .header-btn img {
   margin: 0 3px 0 3px;
 }
 /*# sourceMappingURL=styles.css.map */

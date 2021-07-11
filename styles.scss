@@ -6,11 +6,15 @@ $secondary3: #e6f8ef;
 $secondary4: #e3f9ee;
 $text1: #000000;
 
+$font-bold: 700;
+$font-semi-bold: 600;
+$font-regular: 400;
+
 body {
     // background-color: $secondary2;
     background-image: linear-gradient(to right, $secondary2 , $secondary4);
     font-family: 'Poppins', sans-serif;
-    margin-left: 100px;
+    margin-left: 115px;
     margin-right: 105px;
     margin-top: 30px;
 }
@@ -19,7 +23,7 @@ h1, h2 { margin-block: 0; }
 * { font-weight: 600; }
 
 header {
-    height: 45px;
+    height: 54px;
     // background-color: tomato;
     display: flex;
     // flex-direction: row;
@@ -28,19 +32,21 @@ header {
     // margin-right: 30px;
 
     .header-title {
+        height: 100%;
+        width: 180px;
         // background-color: red;
-        padding-left: 16px;
-        padding-right: 16px;
+        // padding-left: 16px;
+        // padding-right: 16px;
 
         h1 {
-            font-weight: bold;
+            font-weight: $font-bold;
             font-size: 34px;
         }
     }
 
     .header-menu {
         // background-color: yellowgreen;
-        margin-left: 30px;
+        margin-left: 35px;
         display: flex;
         align-items: flex-end;
         height: 35px;
@@ -56,7 +62,7 @@ header {
                 height: 32px;
             }
 
-            i {
+            img {
                 margin-left: 8px;
             }
 
@@ -80,8 +86,8 @@ header {
 
         .header-btn {
             border: 2px solid $text1;
-            margin-left: 8px;
-            padding: 0 8px 0 8px;
+            margin-left: 6px;
+            padding: 0 6px 0 6px;
             height: 34px;
             display: flex;
             align-items: center;
@@ -98,14 +104,14 @@ header {
                         border-left: 2px solid $text1;
                     }
 
-                    span {
+                    img {
                         // background-color: yellow;
-                        margin: 0 15px 0 15px;
+                        margin: 0 14px 0 14px;
                     }
                 }
 
             }
-            span, i {
+            span, img {
                 margin: 0 3px 0 3px;
             }
         }
