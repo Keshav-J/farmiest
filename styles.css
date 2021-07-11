@@ -1,0 +1,124 @@
+body {
+  background-image: -webkit-gradient(linear, left top, right top, from(#eedab5), to(#e3f9ee));
+  background-image: linear-gradient(to right, #eedab5, #e3f9ee);
+  font-family: 'Poppins', sans-serif;
+  margin-left: 100px;
+  margin-right: 105px;
+  margin-top: 30px;
+}
+
+h1, h2 {
+  margin-block: 0;
+}
+
+* {
+  font-weight: 600;
+}
+
+header {
+  height: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-title {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+header .header-title h1 {
+  font-weight: bold;
+  font-size: 34px;
+}
+
+header .header-menu {
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 35px;
+}
+
+header .header-menu .menu-item {
+  padding: 0 12px 0 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 4px solid transparent;
+}
+
+header .header-menu .menu-item h2 {
+  height: 32px;
+}
+
+header .header-menu .menu-item i {
+  margin-left: 8px;
+}
+
+header .header-menu .menu-item.active {
+  color: #3bb77e;
+  border-bottom: 4px solid #3bb77e;
+}
+
+header .header-menu .menu-item.active h2 {
+  font-weight: bold;
+}
+
+header .header-buttons {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+header .header-buttons .header-btn {
+  border: 2px solid #000000;
+  margin-left: 8px;
+  padding: 0 8px 0 8px;
+  height: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-buttons .header-btn.header-split-btn {
+  padding: 0;
+}
+
+header .header-buttons .header-btn.header-split-btn div {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .header-buttons .header-btn.header-split-btn div:not(:nth-of-type(1)) {
+  border-left: 2px solid #000000;
+}
+
+header .header-buttons .header-btn.header-split-btn div span {
+  margin: 0 15px 0 15px;
+}
+
+header .header-buttons .header-btn span, header .header-buttons .header-btn i {
+  margin: 0 3px 0 3px;
+}
+/*# sourceMappingURL=styles.css.map */
