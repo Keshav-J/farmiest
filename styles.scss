@@ -446,3 +446,67 @@ button { border: none; cursor: pointer; }
         }
     }
 }
+
+.page-3 {
+    height: 484px;
+    background: url('./assets/images/Vegs.png') no-repeat center center scroll;
+    background-size: cover;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .backdrop {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.3);
+        z-index: 0;
+    }
+
+    :not(.backdrop) {
+        z-index: 10;
+    }
+
+    .title {
+        padding-top: 115px;
+        text-align: center;
+        font-size: 48px;
+        color: $text3;
+        font-weight: $font-semi-bold;
+        
+        span {
+            border-bottom: 4px solid $text3;
+        }
+    }
+
+    .btn {
+        margin-top: 55px;
+        background-color: $primary2;
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+
+        .play {
+            position: relative;
+
+            &::before {
+                content: '';
+                border-bottom: 24px solid $text3;
+                border-right: 36px solid transparent;
+                position: absolute;
+                left: -12px;
+                top: -24px;
+            }
+
+            &::after {
+                content: '';
+                border-top: 24px solid $text3;
+                border-right: 36px solid transparent;
+                position: absolute;
+                left: -12px;
+                top: 0px;
+            }
+        }
+    }
+}
