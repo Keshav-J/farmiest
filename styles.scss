@@ -8,6 +8,7 @@ $secondary4: #e3f9ee;
 $text1: #000000;
 $text2: #10B981;
 $text3: #ffffff;
+$text4: #3bb77e;
 
 $font-bold: 700;
 $font-semi-bold: 600;
@@ -21,10 +22,11 @@ body {
 
 h1, h2, h3, h4, h5, h6, p { margin-block: 0; }
 * { font-weight: 600; }
+button { border: none; cursor: pointer; }
 
 .page-1 {
     background-image: linear-gradient(to right, $secondary2 , $secondary4);
-    padding: 30px 105px 0px 115px;
+    padding: 30px 105px 0px 105px;
 
     header {
         height: 54px;
@@ -158,7 +160,6 @@ h1, h2, h3, h4, h5, h6, p { margin-block: 0; }
                 background-color: $text1;
                 margin-top: 65px;
                 color: $text3;
-                border: none;
                 border-radius: 100px;
                 height: 45px;
                 width: 155px;
@@ -231,6 +232,214 @@ h1, h2, h3, h4, h5, h6, p { margin-block: 0; }
                         font-size: 14px;
                         line-height: 21px;
                         font-weight: $font-regular;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.page-2 {
+    padding: 0px 105px;
+    margin: 125px auto 90px auto;
+
+    .food-types {
+        // background-color: tomato;
+        width: 100%;
+        height: 236px;
+        display: flex;
+        justify-content: space-between;
+        // margin: 0 -4px;
+
+        .item {
+            position: relative;
+            // width: fit-content;
+            // width: 375px;
+            // margin-left: 4px;
+
+            img {
+                // position: absolute;
+                width: 375px;
+                // z-index: 0;
+                margin: -2px -4px;
+            }
+
+            h3, h5, button {
+                position: absolute;
+                margin-left: 25px;
+                // z-index: 10;
+                top: 0;
+                left: 0;
+            }
+
+            h5 {
+                font-family: Satisfy;
+                font-size: 16px;
+                font-weight: $font-regular;
+                color: $text4;
+                top: 45px;
+            }
+
+            h3 {
+                font-size: 24px;
+                line-height: 36px;
+                font-weight: $font-regular;
+                top: 65px;
+            }
+
+            button {
+                top: 125px;
+                background-color: $primary2;
+                color: $text3;
+                box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+                border-radius: 6px;
+                height: 30px;
+                width: 100px;
+                font-size: 10px;
+            }
+        }
+    }
+
+    .food-menu {
+        // background-color: tomato;
+        margin-top: 90px;
+
+        h2 {
+            text-align: center;
+            font-size: 48px;
+            font-weight: $font-semi-bold;
+
+            span {
+                border-bottom: 4px solid $primary2;
+            }
+        }
+
+        nav {
+            // background-color: tomato;
+            margin-top: 48px;
+            height: 52px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .item {
+                color: $text1;
+                font-size: 18px;
+                line-height: 28px;
+                margin: 0px 26px;
+                // margin: 12px 52px;
+                font-weight: $font-regular;
+
+                &.active {
+                    padding: 12px 52px;
+                    color: white;
+                    background-color: $primary1;
+                    border-radius: 6px;
+                    box-shadow: -1.15px 10.94px 39.56px rgba(0, 0, 0, 0.15);
+                }
+            }
+        }
+    }
+
+    .food-list {
+        margin-top: 42px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        // display: grid;
+        // grid-template-columns: repeat(4, 1fr);
+        // justify-content: center;
+
+        .item {
+            padding: 8.75px;
+            box-shadow: 0px 1px 30px rgba(36, 38, 43, 0.1);
+            border-radius: 6px;
+            width: fit-content;
+            margin-bottom: 2vh;
+
+            .food {
+                height: 262px;
+                width: 262px;
+            }
+
+            h6 {
+                margin: 12px auto auto 5px;
+                font-size: 14px;
+                line-height: 28px;
+                font-weight: $font-regular;
+            }
+
+            h4 {
+                margin-left: 4px;
+                font-size: 21px;
+                line-height: 28px;
+                font-weight: $font-semi-bold;
+            }
+
+            .price-rating {
+                margin: 5px auto auto 5px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .price {
+                    font-family: 'Times New Roman', Times, serif;
+                    display: flex;
+
+                    .original-price {
+                        margin-right: 6px;
+                        text-decoration: line-through;
+                    }
+
+                    .actual-price {
+                        color: $text4;
+                    }
+                }
+
+                .rating {
+                    display: flex;
+
+                    i {
+                        font-size: 12px;
+                        color: $primary2;
+                        margin: 0 1.6px;
+                    }
+                }
+            }
+
+            .btn-list {
+                margin: 5px auto 13px auto;
+                display: flex;
+
+                .btn {
+                    background-color: $primary2;
+                    border-radius: 6px;
+                    height: 40px;
+                    color: $text3;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    &.btn-cart {
+                        text-transform: uppercase;
+                        width: 150px;
+
+                        img {
+                            margin-left: 3px;
+                            position: relative;
+                            top: -2px;
+                        }
+                    }
+
+                    &.btn-fav {
+                        margin: auto 5px auto auto;
+                        height: 40px;
+                        width: 40px;
+                    }
+
+                    &.btn-watch {
+                        height: 40px;
+                        width: 40px;
                     }
                 }
             }
