@@ -567,4 +567,125 @@ button {
   left: -12px;
   top: 0px;
 }
+
+.page-4 .title {
+  margin-top: 70px;
+  width: 570px;
+  margin: 70px auto 20px auto;
+  position: relative;
+}
+
+.page-4 .title h1 {
+  font-size: 48px;
+  line-height: 66px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.page-4 .title .underline {
+  border-bottom: 4px solid #ffba43;
+  position: absolute;
+  width: 195px;
+  bottom: -2px;
+  left: 130px;
+}
+
+.page-4 .menu {
+  margin: 130px 125px 115px 105px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-4 .menu .banner {
+  height: 490px;
+  min-width: 396px;
+  background: url("./assets/images/Banner.png") no-repeat center center scroll;
+  background-size: cover;
+}
+
+.page-4 .menu .banner h3 {
+  color: #ffffff;
+  font-size: 37px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: capitalize;
+  margin: auto 60px;
+  padding-top: 54px;
+}
+
+.page-4 .menu .banner button {
+  margin: 38px auto auto 130px;
+  background-color: #ffba43;
+  color: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  height: 40px;
+  width: 120px;
+  font-size: 14px;
+}
+
+.page-4 .menu .menu-list {
+  margin-left: 47px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.page-4 .menu .menu-list .item {
+  -webkit-box-shadow: 0px 1px 30px rgba(36, 38, 43, 0.1);
+          box-shadow: 0px 1px 30px rgba(36, 38, 43, 0.1);
+  border-radius: 6px;
+  height: 120px;
+  width: 360px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.page-4 .menu .menu-list .item img {
+  height: 120px;
+  width: 120px;
+}
+
+.page-4 .menu .menu-list .item .desc {
+  margin-left: 15px;
+}
+
+.page-4 .menu .menu-list .item .desc h5 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.page-4 .menu .menu-list .item .desc .rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-4 .menu .menu-list .item .desc .rating i {
+  font-size: 12px;
+  color: #ffba43;
+  margin-right: 6px;
+}
+
+.page-4 .menu .menu-list .item .desc .price {
+  font-family: 'Times New Roman', Times, serif;
+  color: #3bb77e;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
 /*# sourceMappingURL=styles.css.map */
