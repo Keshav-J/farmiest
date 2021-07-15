@@ -14,6 +14,7 @@ $text5: #4a4a4a;
 $font-bold: 700;
 $font-semi-bold: 600;
 $font-regular: 400;
+$font-light: 300;
 
 body {
     // background-color: $secondary2;
@@ -742,3 +743,127 @@ button { border: none; cursor: pointer; }
         }
     }
 }
+
+.page-6 {
+    .title {
+        // background-color: tomato;
+        margin: 90px auto 84px auto;
+        width: 412px;
+        position: relative;
+
+        h1 {
+            font-size: 48px;
+            line-height: 66px;
+            font-weight: $font-semi-bold;
+            text-transform: capitalize;
+        }
+
+        .underline {
+            border-bottom: 4px solid $primary2;
+            position: absolute;
+            width: 115px;
+            bottom: -2px;
+            left: 55px;
+        }
+    }
+
+    .blog-list {
+        margin: auto 165px 157px 165px;
+        display: flex;
+        justify-content: space-between;
+
+        .item {
+            box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+            border-radius: 10px;
+            height: 500px;
+            width: 350px;
+
+            .content {
+                position: relative;
+                margin-top: 16px;
+        
+                .date {
+                    position: absolute;
+                    transform: rotate(-90deg);
+                    top: 50%;
+                    margin-left: -24px;
+                    margin-top: -52px;
+        
+                    p {
+                        font-size: 12px;
+                        color: $primary1;
+                    }
+                }
+        
+                .description {
+                    margin-left: 47px;
+        
+                    .tags {
+                        display: flex;
+                        align-items: center;
+        
+                        .user {
+                            font-size: 12px;
+                            color: $primary1;
+
+                            span {
+                                text-transform: uppercase;
+                                margin: auto 8px auto 6px;
+                            }
+                        }
+
+                        .tag {
+                            background: $primary1;
+                            color: $text3;
+                            font-size: 12px;
+                            height: 20px;
+                            width: 108px;
+                            text-transform: uppercase;
+                            text-align: center;
+                            border-radius: 4px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                        }
+                    }
+
+                    .blog-title {
+                        font-size: 18px;
+                        font-weight: $font-bold;
+                        width: 240px;
+
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;  
+                        overflow: hidden;
+                    }
+
+                    .blog-desc {
+                        font-size: 12px;
+                        font-weight: $font-light;
+                        width: 252px;
+
+                        display: -webkit-box;
+                        -webkit-line-clamp: 4;
+                        -webkit-box-orient: vertical;  
+                        overflow: hidden;
+                    }
+
+                    .read-more {
+                        margin-top: 20px;
+                        font-size: 12px;
+                        font-weight: $font-semi-bold;
+                        color: $primary1;
+
+                        img {
+                            position: relative;
+                            bottom: -1px;
+                            left: 2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
