@@ -688,4 +688,139 @@ button {
   font-size: 18px;
   margin-top: 10px;
 }
+
+.page-5 {
+  background-color: #3bb77e;
+  padding: 36px 64px 68px 64px;
+}
+
+.page-5 .title {
+  width: 660px;
+  margin: 36px auto 20px auto;
+  position: relative;
+}
+
+.page-5 .title h1 {
+  font-size: 48px;
+  line-height: 66px;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #ffffff;
+}
+
+.page-5 .title .underline {
+  border-bottom: 4px solid #ffffff;
+  position: absolute;
+  width: 195px;
+  bottom: -2px;
+  left: 170px;
+}
+
+.page-5 .testimonials {
+  margin-top: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-5 .testimonials .item {
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: #ffffff;
+  height: 160px;
+  width: 370px;
+  padding: 19px 25px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-5 .testimonials .item .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #4a4a4a;
+  height: 97px;
+}
+
+.page-5 .testimonials .item .text .testimonial {
+  font-weight: 400;
+  font-size: 16px;
+  width: 300px;
+  margin-top: 10px;
+}
+
+.page-5 .testimonials .item .text .quote {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 96px;
+  position: relative;
+  top: -4px;
+}
+
+.page-5 .testimonials .item .customer {
+  background-color: #3bb77e;
+  border-radius: 6px;
+  padding-left: 15px;
+  color: #ffffff;
+  position: relative;
+}
+
+.page-5 .testimonials .item .customer img {
+  position: absolute;
+  height: 41px;
+  width: 41px;
+  border: 2px solid #ffffff;
+  border-radius: 4px;
+  right: 8px;
+  top: -20px;
+}
+
+.page-5 .testimonials .item .customer .name {
+  margin-top: 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.page-5 .testimonials .item .customer .designation {
+  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.page-5 .navigator {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.page-5 .navigator .bar {
+  width: 120px;
+  height: 4px;
+  background-color: rgba(250, 250, 250, 0.5);
+  border-radius: 4px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.page-5 .navigator .bar.active {
+  background-color: #FAFAFA;
+}
 /*# sourceMappingURL=styles.css.map */
