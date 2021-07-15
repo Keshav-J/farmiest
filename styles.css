@@ -3,7 +3,7 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul {
   margin-block: 0;
 }
 
@@ -14,6 +14,11 @@ h1, h2, h3, h4, h5, h6, p {
 button {
   border: none;
   cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #4a4a4a;
 }
 
 .page-1 {
@@ -939,6 +944,7 @@ button {
   font-size: 12px;
   font-weight: 300;
   width: 252px;
+  color: #4a4a4a;
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
@@ -956,5 +962,129 @@ button {
   position: relative;
   bottom: -1px;
   left: 2px;
+}
+
+.page-7 {
+  background-color: #e3f9ee;
+  padding-top: 84px;
+}
+
+.page-7 .container {
+  margin: auto 165px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.page-7 .container .about {
+  width: 300px;
+}
+
+.page-7 .container .about h2 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.page-7 .container .about p {
+  margin-top: 4px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.page-7 .container .about .social {
+  margin-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.page-7 .container .about .social .btn {
+  background-color: #3bb77e;
+  border-radius: 6px;
+  height: 45px;
+  width: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 12px;
+}
+
+.page-7 .container .list.links {
+  margin-left: 16px;
+}
+
+.page-7 .container .list {
+  width: 180px;
+}
+
+.page-7 .container .list h4 {
+  font-size: 20px;
+}
+
+.page-7 .container .list ul {
+  list-style-type: none;
+  margin-top: 4px;
+  padding: 0;
+}
+
+.page-7 .container .list ul li {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 16px;
+}
+
+.page-7 .container .contact {
+  width: 240px;
+}
+
+.page-7 .container .contact ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 16px;
+}
+
+.page-7 .container .contact ul li i {
+  width: 32px;
+  color: #ffba43;
+  font-size: 22px;
+  position: relative;
+  top: 6px;
+}
+
+.page-7 .container .contact ul li p {
+  line-height: 28px;
+}
+
+.page-7 .container .contact ul li p span, .page-7 .container .contact ul li p a {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.page-7 .copyrights-text {
+  margin-top: 94px;
+  width: 100%;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  font-weight: 400;
+  border-top: 1px solid rgba(0, 0, 0, 0.13);
 }
 /*# sourceMappingURL=styles.css.map */
