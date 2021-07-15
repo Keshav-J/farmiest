@@ -134,6 +134,17 @@ a { text-decoration: none; color: $text5; }
         width: 100%;
         position: relative;
 
+        .vertical-text {
+            -webkit-text-stroke: 1px $text4;
+            color: transparent;
+            font-weight: $font-semi-bold;
+            font-size: 112px;
+            position: absolute;
+            left: -230px;
+            top: 105px;
+            transform: rotate(-90deg);
+        }
+
         .main {
             // background-color: blue;
             margin-left: 90px;

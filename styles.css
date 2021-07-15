@@ -141,6 +141,18 @@ a {
   position: relative;
 }
 
+.page-1 .main-section .vertical-text {
+  -webkit-text-stroke: 1px #3bb77e;
+  color: transparent;
+  font-weight: 600;
+  font-size: 112px;
+  position: absolute;
+  left: -230px;
+  top: 105px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
 .page-1 .main-section .main {
   margin-left: 90px;
   width: 500px;
