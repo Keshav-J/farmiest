@@ -10,7 +10,7 @@
 	<link href="https://kit-pro.fontawesome.com/releases/v5.15.3/css/pro.min.css" rel="stylesheet">
 </head>
 <body>
-	<section class="page-1">
+	<section class="home">
 		<header>
 			<div class="header-title">
 				<h1>Farmiest!</h1>
@@ -63,7 +63,11 @@
 			<div class="main-image">
 				<div class="backdrop"></div>
 				<div class="foreground">
-					<img src="./assets/images/Hero.png" alt="" class="foreground">
+					<picture>
+						<source srcset="./assets/images/Hero@3x.png" media="(min-width: 1920px)">
+						<source srcset="./assets/images/Hero@2x.png" media="(min-width: 1440px)">
+						<img src="./assets/images/Hero.png" alt="" class="foreground" />
+					</picture>
 				</div>
 			</div>
 			<div class="main-categories">
@@ -99,7 +103,7 @@
 		</div>
 	</section>
 
-	<section class="page-2">
+	<section class="new-org-prods">
 		<div class="food-types">
 			<div class="item">
 				<img src="./assets/images/Food1.png" alt="Vegetables">
@@ -372,7 +376,7 @@
 		</div>
 	</section>
 
-	<section class="page-3">
+	<section class="aesthetics">
 		<div class="backdrop"></div>
 		<h1 class="title">Every<span>day Fres</span>h & Clean</h1>
 		<button class="btn">
@@ -380,7 +384,7 @@
 		</button>
 	</section>
 
-	<section class="page-4">
+	<section class="fresh-org-prods">
 		<div class="title">
 			<h1>Fresh organic products</h1>
 			<div class="underline"></div>
@@ -479,7 +483,7 @@
 		</div>
 	</section>
 
-	<section class="page-5">
+	<section class="customers-say">
 		<div class="title">
 			<h1>What our customers says</h1>
 			<div class="underline"></div>
@@ -533,7 +537,7 @@
 		</div>
 	</section>
 
-	<section class="page-6">
+	<section class="food-blogs">
 		<div class="title">
 			<h1>Foood blog posts</h1>
 			<div class="underline"></div>
@@ -629,7 +633,7 @@
 		</div>
 	</section>
 
-	<section class="page-7">
+	<section class="footer">
 		<div class="container">
 			<div class="about">
 				<h2>Farmiest!</h2>

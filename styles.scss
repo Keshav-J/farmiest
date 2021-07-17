@@ -9,7 +9,8 @@ $text1: #000000;
 $text2: #10B981;
 $text3: #ffffff;
 $text4: #3bb77e;
-$text5: #4a4a4a;
+$text5: #ffba43;
+$text6: #4a4a4a;
 
 $font-bold: 700;
 $font-semi-bold: 600;
@@ -17,7 +18,6 @@ $font-regular: 400;
 $font-light: 300;
 
 body {
-    // background-color: $secondary2;
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
@@ -25,43 +25,34 @@ body {
 h1, h2, h3, h4, h5, h6, p, ul { margin-block: 0; }
 * { font-weight: 600; }
 button { border: none; cursor: pointer; }
-a { text-decoration: none; color: $text5; }
+a { text-decoration: none; color: $text6; }
 
-.page-1 {
+.home {
     background-image: linear-gradient(to right, $secondary2 , $secondary4);
-    padding: 30px 105px 0px 105px;
+    padding: 30px 111px 0px 123px;
 
     header {
         height: 54px;
-        // background-color: tomato;
         display: flex;
-        // flex-direction: row;
         align-items: center;
-        // margin-left: 100px;
-        // margin-right: 30px;
 
         .header-title {
             height: 100%;
             width: 180px;
-            // background-color: red;
-            // padding-left: 16px;
-            // padding-right: 16px;
 
             h1 {
                 font-weight: $font-bold;
-                font-size: 34px;
+                font-size: 36px;
             }
         }
 
         .header-menu {
-            // background-color: yellowgreen;
             margin-left: 35px;
             display: flex;
             align-items: flex-end;
             height: 35px;
             
             .menu-item {
-                // background-color: turquoise;
                 padding: 0 12px 0 12px;
                 display: flex;
                 align-items: center;
@@ -87,7 +78,6 @@ a { text-decoration: none; color: $text5; }
         }
 
         .header-buttons {
-            // background-color: blue;
             margin-left: auto;
             display: flex;
             font-size: 18px;
@@ -95,9 +85,9 @@ a { text-decoration: none; color: $text5; }
 
             .header-btn {
                 border: 2px solid $text1;
-                margin-left: 6px;
+                margin-left: 7px;
                 padding: 0 6px 0 6px;
-                height: 34px;
+                height: 36px;
                 display: flex;
                 align-items: center;
 
@@ -114,12 +104,12 @@ a { text-decoration: none; color: $text5; }
                         }
 
                         img {
-                            // background-color: yellow;
-                            margin: 0 14px 0 14px;
+                            margin: 0 16px 0 16px;
                         }
                     }
 
                 }
+
                 span, img {
                     margin: 0 3px 0 3px;
                 }
@@ -128,7 +118,6 @@ a { text-decoration: none; color: $text5; }
     }
 
     .main-section {
-        // background-color: tomato;
         margin-top: 150px;
         height: 668px;
         width: 100%;
@@ -141,20 +130,20 @@ a { text-decoration: none; color: $text5; }
             font-size: 112px;
             position: absolute;
             left: -230px;
-            top: 105px;
+            top: 125px;
             transform: rotate(-90deg);
         }
 
         .main {
-            // background-color: blue;
             margin-left: 90px;
+            padding-top: 20px;
             width: 500px;
             display: flex;
             flex-direction: column;
             
             h1 {
                 font-weight: $font-bold;
-                font-size: 44px;
+                font-size: 48px;
                 line-height: 68px;
             }
 
@@ -183,9 +172,8 @@ a { text-decoration: none; color: $text5; }
         }
 
         .main-image {
-            // background-color: red;
             height: 550px;
-            width: 500px;
+            width: 550px;
             position: absolute;
             right: 0;
             top: 0;
@@ -207,7 +195,7 @@ a { text-decoration: none; color: $text5; }
 
                 img {
                     position: absolute;
-                    left: 50%;
+                    left: 55%;
                     transform: translateX(-50%);
                 }
             }
@@ -223,6 +211,7 @@ a { text-decoration: none; color: $text5; }
             display: flex;
             justify-content: space-around;
             align-items: center;
+            flex-wrap: wrap;
             border-radius: 5px;
 
             .item {
@@ -253,35 +242,27 @@ a { text-decoration: none; color: $text5; }
     }
 }
 
-.page-2 {
+.new-org-prods {
     padding: 0px 105px;
-    margin: 125px auto 90px auto;
+    margin: 125px auto 70px auto;
 
     .food-types {
-        // background-color: tomato;
         width: 100%;
-        height: 236px;
         display: flex;
         justify-content: space-between;
-        // margin: 0 -4px;
+        flex-wrap: wrap;
 
         .item {
             position: relative;
-            // width: fit-content;
-            // width: 375px;
-            // margin-left: 4px;
 
             img {
-                // position: absolute;
                 width: 375px;
-                // z-index: 0;
                 margin: -2px -4px;
             }
 
             h3, h5, button {
                 position: absolute;
                 margin-left: 25px;
-                // z-index: 10;
                 top: 0;
                 left: 0;
             }
@@ -315,7 +296,6 @@ a { text-decoration: none; color: $text5; }
     }
 
     .food-menu {
-        // background-color: tomato;
         margin-top: 90px;
 
         h2 {
@@ -329,7 +309,6 @@ a { text-decoration: none; color: $text5; }
         }
 
         nav {
-            // background-color: tomato;
             margin-top: 48px;
             height: 52px;
             display: flex;
@@ -341,7 +320,6 @@ a { text-decoration: none; color: $text5; }
                 font-size: 18px;
                 line-height: 28px;
                 margin: 0px 26px;
-                // margin: 12px 52px;
                 font-weight: $font-regular;
 
                 &.active {
@@ -360,16 +338,13 @@ a { text-decoration: none; color: $text5; }
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        // display: grid;
-        // grid-template-columns: repeat(4, 1fr);
-        // justify-content: center;
 
         .item {
             padding: 8.75px;
             box-shadow: 0px 1px 30px rgba(36, 38, 43, 0.1);
             border-radius: 6px;
             width: fit-content;
-            margin-bottom: 2vh;
+            margin-bottom: 28px;
 
             .food {
                 height: 262px;
@@ -415,7 +390,7 @@ a { text-decoration: none; color: $text5; }
 
                     i {
                         font-size: 12px;
-                        color: $primary2;
+                        color: $text5;
                         margin: 0 1.6px;
                     }
                 }
@@ -461,7 +436,7 @@ a { text-decoration: none; color: $text5; }
     }
 }
 
-.page-3 {
+.aesthetics {
     height: 484px;
     background: url('./assets/images/Vegs.png') no-repeat center center scroll;
     background-size: cover;
@@ -525,9 +500,8 @@ a { text-decoration: none; color: $text5; }
     }
 }
 
-.page-4 {
+.fresh-org-prods {
     .title {
-        // background-color: tomato;
         margin-top: 70px;
         width: 570px;
         margin: 70px auto 20px auto;
@@ -582,7 +556,6 @@ a { text-decoration: none; color: $text5; }
         }
 
         .menu-list {
-            // background-color: tomato;
             margin-left: 47px;
             width: 100%;
             display: flex;
@@ -594,7 +567,7 @@ a { text-decoration: none; color: $text5; }
                 box-shadow: 0px 1px 30px rgba(36, 38, 43, 0.1);
                 border-radius: 6px;
                 height: 120px;
-                width: 360px;
+                width: 340px;
                 display: flex;
                 padding: 10px;
 
@@ -618,7 +591,7 @@ a { text-decoration: none; color: $text5; }
     
                         i {
                             font-size: 12px;
-                            color: $primary2;
+                            color: $text5;
                             margin-right: 6px;
                         }
                     }
@@ -636,15 +609,13 @@ a { text-decoration: none; color: $text5; }
     }
 }
 
-.page-5 {
+.customers-say {
     background-color: $primary1;
     padding: 36px 64px 68px 64px;
 
     .title {
-        // background-color: tomato;
         width: 660px;
         margin: 36px auto 20px auto;
-        // padding-top: 70px;
         position: relative;
 
         h1 {
@@ -665,10 +636,10 @@ a { text-decoration: none; color: $text5; }
     }
 
     .testimonials {
-        // background-color: tomato;
         margin-top: 80px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         .item {
             box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -676,6 +647,7 @@ a { text-decoration: none; color: $text5; }
             height: 160px;
             width: 370px;
             padding: 19px 25px;
+            margin-bottom: 10px;
             border-radius: 10px;
             
             display: flex;
@@ -683,10 +655,9 @@ a { text-decoration: none; color: $text5; }
             justify-content: space-between;
 
             .text {
-                // background-color: tomato;
                 display: flex;
                 justify-content: space-between;
-                color: $text5;
+                color: $text6;
                 height: 97px;
 
                 .testimonial {
@@ -739,7 +710,7 @@ a { text-decoration: none; color: $text5; }
     .navigator {
         display: flex;
         justify-content: center;
-        margin-top: 40px;
+        margin-top: 30px;
 
         .bar {
             width: 120px;
@@ -756,9 +727,8 @@ a { text-decoration: none; color: $text5; }
     }
 }
 
-.page-6 {
+.food-blogs {
     .title {
-        // background-color: tomato;
         margin: 90px auto 84px auto;
         width: 412px;
         position: relative;
@@ -780,13 +750,15 @@ a { text-decoration: none; color: $text5; }
     }
 
     .blog-list {
-        margin: auto 165px 157px 165px;
+        margin: auto 165px 147px 165px;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
 
         .item {
             box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
             border-radius: 10px;
+            margin-bottom: 10px;
             height: 500px;
             width: 350px;
 
@@ -854,7 +826,7 @@ a { text-decoration: none; color: $text5; }
                         font-size: 12px;
                         font-weight: $font-light;
                         width: 252px;
-                        color: $text5;
+                        color: $text6;
 
                         display: -webkit-box;
                         -webkit-line-clamp: 4;
@@ -880,18 +852,16 @@ a { text-decoration: none; color: $text5; }
     }
 }
 
-.page-7 {
+.footer {
     background-color: $secondary4;
     padding-top: 84px;
 
     .container {
-        // background-color: tomato;
         margin: auto 165px;
         display: flex;
         justify-content: space-between;
 
         .about {
-            // background-color: violet;
             width: 300px;
 
             h2 {
@@ -928,8 +898,6 @@ a { text-decoration: none; color: $text5; }
 
         .list {
             width: 180px;
-            // background-color: chartreuse;
-            // margin-left: 80px;
 
             h4 {
                 font-size: 20px;
@@ -956,7 +924,7 @@ a { text-decoration: none; color: $text5; }
 
                 i {
                     width: 32px;
-                    color: $primary2;
+                    color: $text5;
                     font-size: 22px;
                     position: relative;
                     top: 6px;
