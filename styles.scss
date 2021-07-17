@@ -57,6 +57,7 @@ a { text-decoration: none; color: $text6; }
                 display: flex;
                 align-items: center;
                 border-bottom: 4px solid transparent;
+                cursor: pointer;
                 
                 h2 {
                     height: 32px;
@@ -90,6 +91,7 @@ a { text-decoration: none; color: $text6; }
                 height: 36px;
                 display: flex;
                 align-items: center;
+                cursor: pointer;
 
                 &.header-split-btn {
                     padding: 0;
@@ -254,6 +256,7 @@ a { text-decoration: none; color: $text6; }
 
         .item {
             position: relative;
+            cursor: pointer;
 
             img {
                 width: 375px;
@@ -321,6 +324,7 @@ a { text-decoration: none; color: $text6; }
                 line-height: 28px;
                 margin: 0px 26px;
                 font-weight: $font-regular;
+                cursor: pointer;
 
                 &.active {
                     padding: 12px 52px;
@@ -349,6 +353,7 @@ a { text-decoration: none; color: $text6; }
             .food {
                 height: 262px;
                 width: 262px;
+                cursor: pointer;
             }
 
             h6 {
@@ -774,6 +779,10 @@ a { text-decoration: none; color: $text6; }
             height: 500px;
             width: 350px;
 
+            img {
+                cursor: pointer;
+            }
+
             .content {
                 position: relative;
                 margin-top: 16px;
@@ -820,6 +829,7 @@ a { text-decoration: none; color: $text6; }
                             display: flex;
                             align-items: center;
                             justify-content: center;
+                            cursor: pointer;
                         }
                     }
 
@@ -851,6 +861,7 @@ a { text-decoration: none; color: $text6; }
                         font-size: 12px;
                         font-weight: $font-semi-bold;
                         color: $primary1;
+                        cursor: pointer;
 
                         img {
                             position: relative;
