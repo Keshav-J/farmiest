@@ -142,7 +142,7 @@ a {
 }
 
 .home .main-section .vertical-text {
-  -webkit-text-stroke: 1px #3bb77e;
+  -webkit-text-stroke: 0.5px #3bb77e;
   color: transparent;
   font-weight: 600;
   font-size: 112px;
@@ -713,6 +713,7 @@ a {
 .customers-say {
   background-color: #3bb77e;
   padding: 36px 64px 68px 64px;
+  overflow-x: hidden;
 }
 
 .customers-say .title {
@@ -739,17 +740,22 @@ a {
 
 .customers-say .testimonials {
   margin-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+}
+
+.customers-say .testimonials .slide {
+  display: none;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  position: relative;
+  left: 0px;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
-.customers-say .testimonials .item {
+.customers-say .testimonials .slide .item {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-color: #ffffff;
@@ -770,7 +776,7 @@ a {
           justify-content: space-between;
 }
 
-.customers-say .testimonials .item .text {
+.customers-say .testimonials .slide .item .text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -781,21 +787,21 @@ a {
   height: 97px;
 }
 
-.customers-say .testimonials .item .text .testimonial {
+.customers-say .testimonials .slide .item .text .testimonial {
   font-weight: 400;
   font-size: 16px;
   width: 300px;
   margin-top: 10px;
 }
 
-.customers-say .testimonials .item .text .quote {
+.customers-say .testimonials .slide .item .text .quote {
   font-family: 'Times New Roman', Times, serif;
   font-size: 96px;
   position: relative;
   top: -4px;
 }
 
-.customers-say .testimonials .item .customer {
+.customers-say .testimonials .slide .item .customer {
   background-color: #3bb77e;
   border-radius: 6px;
   padding-left: 15px;
@@ -803,7 +809,7 @@ a {
   position: relative;
 }
 
-.customers-say .testimonials .item .customer img {
+.customers-say .testimonials .slide .item .customer img {
   position: absolute;
   height: 41px;
   width: 41px;
@@ -813,16 +819,22 @@ a {
   top: -20px;
 }
 
-.customers-say .testimonials .item .customer .name {
+.customers-say .testimonials .slide .item .customer .name {
   margin-top: 14px;
   font-size: 14px;
   font-weight: 600;
 }
 
-.customers-say .testimonials .item .customer .designation {
+.customers-say .testimonials .slide .item .customer .designation {
   margin-bottom: 10px;
   font-size: 12px;
   font-weight: 400;
+}
+
+.customers-say .testimonials #slide-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .customers-say .navigator {
